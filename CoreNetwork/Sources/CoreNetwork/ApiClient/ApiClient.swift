@@ -34,7 +34,7 @@ public actor ApiClient {
     @discardableResult
     public func send(_ request: Request) async throws -> Response<Void>  {
         let (data,statusCode) = try await self.actualSend(request)
-        return Response(value: (), data: data, success: true, statusCode: statusCode)
+        return Response(data: data, value: (), success: true, statusCode: statusCode)
     }
     
     @discardableResult
@@ -45,7 +45,7 @@ public actor ApiClient {
         }
 
         let decoded: T = try await serializer.decode(data)
-        return Response(value: decoded, data: data, success: true, statusCode: statusCode)
+        return Response(data: data, value: decoded, success: true, statusCode: statusCode)
     }
     
     private func actualSend(_ request: Request) async throws -> (data: Data, statusCode: Int) {
