@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D83465B287CA42C005E9970 /* EnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D83465A287CA42C005E9970 /* EnglishApp.swift */; };
+		6D83465B287CA42C005E9970 /* english.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D83465A287CA42C005E9970 /* english.swift */; };
 		6DE6F54C285CE5FB0046206C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE6F54B285CE5FB0046206C /* Assets.xcassets */; };
 		6DFFD0152881C705004A6645 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFD0142881C705004A6645 /* TabbarView.swift */; };
 		6DFFD0192881C85B004A6645 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 6DFFD0182881C85B004A6645 /* CoreNetwork */; };
 		6DFFD01D2881CAE6004A6645 /* TabbarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFD01C2881CAE6004A6645 /* TabbarType.swift */; };
 		6DFFD01F2881E716004A6645 /* EN_Summary in Frameworks */ = {isa = PBXBuildFile; productRef = 6DFFD01E2881E716004A6645 /* EN_Summary */; };
+		6DFFD0212881E994004A6645 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFD0202881E994004A6645 /* TabbarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D1EF6372868CFF6006E422B /* CoreNetwork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreNetwork; sourceTree = "<group>"; };
-		6D83465A287CA42C005E9970 /* EnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishApp.swift; sourceTree = "<group>"; };
+		6D83465A287CA42C005E9970 /* english.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = english.swift; sourceTree = "<group>"; };
 		6DE6F53F285CE5FB0046206C /* english.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = english.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE6F54B285CE5FB0046206C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DE6F550285CE5FB0046206C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFFD0142881C705004A6645 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		6DFFD0162881C831004A6645 /* EN_Summary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = EN_Summary; sourceTree = "<group>"; };
 		6DFFD01C2881CAE6004A6645 /* TabbarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarType.swift; sourceTree = "<group>"; };
+		6DFFD0202881E994004A6645 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				6DE6F550285CE5FB0046206C /* Info.plist */,
-				6D83465A287CA42C005E9970 /* EnglishApp.swift */,
+				6D83465A287CA42C005E9970 /* english.swift */,
 				6D83465C287CA43C005E9970 /* _Schemes */,
 				6DFFD0132881C6DD004A6645 /* TabbarView */,
 			);
@@ -88,6 +90,7 @@
 		6DFFD0132881C6DD004A6645 /* TabbarView */ = {
 			isa = PBXGroup;
 			children = (
+				6DFFD0202881E994004A6645 /* TabbarItem.swift */,
 				6DFFD01C2881CAE6004A6645 /* TabbarType.swift */,
 				6DFFD0142881C705004A6645 /* TabbarView.swift */,
 			);
@@ -176,7 +179,8 @@
 			files = (
 				6DFFD0152881C705004A6645 /* TabbarView.swift in Sources */,
 				6DFFD01D2881CAE6004A6645 /* TabbarType.swift in Sources */,
-				6D83465B287CA42C005E9970 /* EnglishApp.swift in Sources */,
+				6DFFD0212881E994004A6645 /* TabbarItem.swift in Sources */,
+				6D83465B287CA42C005E9970 /* english.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +251,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,7 +340,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,7 +434,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,7 +523,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,7 +611,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -706,7 +705,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -856,7 +854,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -892,7 +889,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				API_HOST = "127.0.0.1:8080";
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-testing";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
