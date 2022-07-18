@@ -1,6 +1,6 @@
 //
 //  TabbarItem.swift
-//  english
+//  english-ios
 //
 //  Created by polykuzin on 15/07/2022.
 //
@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TabbarItem : View {
     
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme)
+    private var colorScheme
     
     let icon : Image
     let title : String

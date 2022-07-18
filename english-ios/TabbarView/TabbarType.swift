@@ -1,6 +1,6 @@
 //
 //  TabbarType.swift
-//  english
+//  english-ios
 //
 //  Created by polykuzin on 15/07/2022.
 //

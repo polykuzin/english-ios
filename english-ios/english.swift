@@ -1,6 +1,6 @@
 //
-//  EnglishApp.swift
-//  english
+//  english.swift
+//  english-ios
 //
 //  Created by polykuzin on 11/07/2022.
 //
@@ -9,10 +9,21 @@ import SwiftUI
 
 @main
 struct english : App {
-
-    var body : some Scene {
+    
+    @Environment(\.scenePhase)
+    private var scenePhase : ScenePhase
+    
+    var body: some Scene {
         WindowGroup {
             TabbarView()
+        }
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .background :
+                print("SUKAAAAA")
+            default :
+                print("SUKA")
+            }
         }
     }
 }

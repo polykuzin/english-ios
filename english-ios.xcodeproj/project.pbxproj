@@ -150,6 +150,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				uk,
 			);
 			mainGroup = 6DE6F536285CE5FB0046206C;
 			productRefGroup = 6DE6F540285CE5FB0046206C /* Products */;
